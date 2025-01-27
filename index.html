@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Quest</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body class="bg-indigo-950 min-h-screen pb-20">
+    <div class="container mx-auto px-4">
+        <!-- Quote Section -->
+        <div class="bg-purple-400 bg-opacity-20 rounded-lg p-6 mt-8 text-white">
+            <p class="text-xl text-center">"Our virtues and our failures are inseparable, like force and matter. When they separate, man is no more."</p>
+            <p class="text-right mt-2">~Nikola Tesla</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="mt-8">
+            <div class="relative">
+                <input type="text" placeholder="Search For Chapter or Island" class="w-full p-4 rounded-full bg-indigo-900 text-white focus:outline-none focus:ring-2 focus:ring-purple-400">
+                <button class="absolute right-4 top-1/2 transform -translate-y-1/2">
+                    <i class="bi bi-search text-white text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+        <div class="mt-8 relative">
+            <div class="carousel flex overflow-hidden">
+                <!-- Homework Card -->
+                <div class="w-full p-6 bg-pink-400 bg-opacity-20 rounded-lg">
+                    <h3 class="text-2xl text-white mb-2">Homework</h3>
+                    <p class="text-white opacity-80">Attention students! Don't forget to check for your latest assignments from your teacher.</p>
+                </div>
+            </div>
+            <!-- Carousel Navigation -->
+            <div class="flex justify-center gap-2 mt-4">
+                <button class="h-2 w-2 rounded-full bg-white"></button>
+                <button class="h-2 w-2 rounded-full bg-white opacity-50"></button>
+                <button class="h-2 w-2 rounded-full bg-white opacity-50"></button>
+            </div>
+        </div>
+
+        <!-- Knowledge Quests -->
+        <div class="mt-8">
+            <h2 class="text-2xl text-white mb-4">Browse Knowledge Quests</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <!-- Maths -->
+                <a href="maths.html" class="p-6 rounded-lg bg-emerald-400 bg-opacity-20 transform hover:scale-105 transition-transform">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl text-white">Maths</h3>
+                        <i class="bi bi-calculator text-white text-2xl"></i>
+                    </div>
+                    <p class="text-white opacity-80">0/20 Chapters</p>
+                    <div class="mt-2 bg-white bg-opacity-20 rounded-full h-2">
+                        <div class="w-0 h-full bg-white rounded-full"></div>
+                    </div>
+                    <p class="text-white mt-2">Score - 0</p>
+                </a>
+
+                <!-- Physics -->
+                <a href="#" class="p-6 rounded-lg bg-blue-400 bg-opacity-20 transform hover:scale-105 transition-transform">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl text-white">Physics</h3>
+                        <i class="bi bi-atom text-white text-2xl"></i>
+                    </div>
+                    <p class="text-white opacity-80">0/20 Chapters</p>
+                    <div class="mt-2 bg-white bg-opacity-20 rounded-full h-2">
+                        <div class="w-0 h-full bg-white rounded-full"></div>
+                    </div>
+                    <p class="text-white mt-2">Score - 0</p>
+                </a>
+
+                <!-- Biology -->
+                <a href="#" class="p-6 rounded-lg bg-orange-400 bg-opacity-20 transform hover:scale-105 transition-transform">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl text-white">Biology</h3>
+                        <i class="bi bi-virus text-white text-2xl"></i>
+                    </div>
+                    <p class="text-white opacity-80">0/31 Chapters</p>
+                    <div class="mt-2 bg-white bg-opacity-20 rounded-full h-2">
+                        <div class="w-0 h-full bg-white rounded-full"></div>
+                    </div>
+                    <p class="text-white mt-2">Score - 0</p>
+                </a>
+
+                <!-- Chemistry -->
+                <a href="#" class="p-6 rounded-lg bg-yellow-400 bg-opacity-20 transform hover:scale-105 transition-transform">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl text-white">Chemistry</h3>
+                        <i class="bi bi-flask text-white text-2xl"></i>
+                    </div>
+                    <p class="text-white opacity-80">0/24 Chapters</p>
+                    <div class="mt-2 bg-white bg-opacity-20 rounded-full h-2">
+                        <div class="w-0 h-full bg-white rounded-full"></div>
+                    </div>
+                    <p class="text-white mt-2">Score - 0</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="fixed bottom-0 left-0 right-0 bg-indigo-900 p-4">
+            <div class="flex justify-around max-w-md mx-auto">
+                <button class="flex flex-col items-center text-white">
+                    <i class="bi bi-book text-xl"></i>
+                    <span class="text-sm mt-1">Learn</span>
+                </button>
+                <button class="flex flex-col items-center text-white opacity-50">
+                    <i class="bi bi-question-circle text-xl"></i>
+                    <span class="text-sm mt-1">Quiz</span>
+                </button>
+                <button class="flex flex-col items-center text-white opacity-50">
+                    <i class="bi bi-grid text-xl"></i>
+                    <span class="text-sm mt-1">Dashboard</span>
+                </button>
+                <button class="flex flex-col items-center text-white opacity-50">
+                    <i class="bi bi-person text-xl"></i>
+                    <span class="text-sm mt-1">Profile</span>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+    <script>
+        // Carousel functionality
+        const carousel = document.querySelector('.carousel');
+        const slides = document.querySelectorAll('.carousel > div');
+        const dots = document.querySelectorAll('.carousel-nav button');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+            dots.forEach((dot, i) => {
+                dot.style.opacity = i === index ? '1' : '0.5';
+            });
+        }
+
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }, 5000);
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
